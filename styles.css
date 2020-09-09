@@ -511,6 +511,7 @@ a:link {
   .contact-section {
     font-family: "Poppins", sans-serif;
     background-color: #2d3436;
+    margin-top: -2px;
   }
 
   .ctt-info {
