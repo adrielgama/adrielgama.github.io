@@ -98,10 +98,6 @@ a:link {
     line-height: 36px;
   }
 
-  .navbar {
-    position: sticky !important;
-  }
-
   .custom-bg {
     background-color: #6c5ce7;
     border-radius: 20px;
