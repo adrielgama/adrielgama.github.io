@@ -99,7 +99,7 @@ a:link {
   }
 
   .navbar {
-    position: fixed !important;
+    position: sticky !important;
   }
 
   .custom-bg {
