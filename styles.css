@@ -57,7 +57,8 @@ a:link {
   color: #903bff;
 }
 .fa-adobe {
-  color: #e61717;
+  background-image: url(svg/adobe.svg);
+  /* color: #e61717; */
 }
 .fa-linux {
   color: #1f1c1c;
