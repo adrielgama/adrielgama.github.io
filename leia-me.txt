@@ -1,7 +1,0 @@
-Link do design do projeto inicial no figma:
-https://www.figma.com/file/9oFNL7ObGki846OGmtedFF/Portfolio-2020?node-id=0%3A1&viewport=206%2C34%2C0.13738520443439484
-
-Link do projeto final:
-https://adrielgama.github.io/
-
-Design e desenvolvimento feitos por Adriel Gama.
