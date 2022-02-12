@@ -36,3 +36,58 @@ export const FooterComponent = styled.div`
     color: ${ColorPallete.footer};
   }
 `;
+
+export const LinkSVG = styled.a`
+  color: ${ColorPallete.main};
+  font-size: 2.5rem;
+  transition: 150ms;
+  cursor: pointer;
+`;
+
+export const LinkFooter = styled(LinkSVG)`
+  padding-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: ${ColorPallete.secondary};
+
+  :hover {
+    color: ${ColorPallete.textWhite};
+  }
+`;
+
+export const Git = styled(LinkSVG)`
+  :hover {
+    color: ${ColorPallete.git};
+  }
+`;
+
+export const Linkedin = styled(LinkSVG)`
+  :hover {
+    color: ${ColorPallete.linkedin};
+  }
+`;
+
+export const Insta = styled(LinkSVG)`
+  :hover {
+    color: ${ColorPallete.insta};
+  }
+`;
+
+export const Email = styled.h2`
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 350ms;
+
+  color: ${ColorPallete.textGrey};
+
+  :hover {
+    font-size: 1.3rem;
+    color: ${ColorPallete.secondary};
+  }
+
+  :active {
+    color: ${ColorPallete.alter};
+  }
+`;

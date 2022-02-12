@@ -1,7 +1,15 @@
 import { Container, Box, Paper, Tooltip } from "@mui/material";
 import styled from "styled-components";
 import { ColorPallete } from "../../themes/theme";
-import { HeaderComponent, FooterComponent } from "./style";
+import {
+  HeaderComponent,
+  FooterComponent,
+  LinkFooter,
+  Git,
+  Linkedin,
+  Insta,
+  Email,
+} from "./style";
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 import Pulse from "react-reveal/Pulse";
 import Fade from "react-reveal/Fade";
@@ -38,69 +46,20 @@ const PaperStyled = styled(Paper)`
   }
 `;
 
-const LinkSVG = styled.a`
-  color: ${ColorPallete.main};
-  font-size: 2.5rem;
-  transition: 150ms;
-  cursor: pointer;
-`;
+export const Contact = (...props: any[]) => {
+  const language = props[0].getLanguage;
 
-const LinkFooter = styled(LinkSVG)`
-    padding-bottom: 20px;
-    font-size: 14px;
-    text-align: center;
-    color: ${ColorPallete.secondary};
-
-    :hover {
-        color: ${ColorPallete.textWhite};
-    }
-`
-
-const Git = styled(LinkSVG)`
-  :hover {
-    color: ${ColorPallete.git};
-  }
-`;
-
-const Linkedin = styled(LinkSVG)`
-  :hover {
-    color: ${ColorPallete.linkedin};
-  }
-`;
-
-const Insta = styled(LinkSVG)`
-  :hover {
-    color: ${ColorPallete.insta};
-  }
-`;
-
-const Email = styled.h2`
-  margin-top: 20px;
-  font-weight: normal;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: 350ms;
-
-  color: ${ColorPallete.textGrey};
-
-  :hover {
-    font-size: 1.3rem;
-    color: ${ColorPallete.secondary};
-  }
-
-  :active {
-    color: ${ColorPallete.alter};
-  }
-`;
-
-export const Contact = () => {
   return (
     <>
       <Container maxWidth="md">
         <HeaderComponent>
           <Pulse>
             <Fade left>
-              <h1>Onde me encontrar?</h1>
+              {language === "pt-BR" ? (
+                <h1>Onde me encontrar?</h1>
+              ) : (
+                <h1>Where to find me?</h1>
+              )}
             </Fade>
           </Pulse>
         </HeaderComponent>
@@ -146,7 +105,12 @@ export const Contact = () => {
                   </Insta>
                 </Tooltip>
               </div>
-              <Tooltip title="Clique para copiar" placement="top">
+              <Tooltip
+                title={
+                  language === "pt-BR" ? "Clique para copiar" : "Click to copy"
+                }
+                placement="top"
+              >
                 <Email
                   onClick={() => {
                     navigator.clipboard.writeText("adrielgama@gmail.com");
@@ -160,12 +124,21 @@ export const Contact = () => {
         </Pulse>
       </Container>
       <FooterComponent>
-        <p>
-          {`Copyright © ${actualYear} Desenvolvido por `}{" "}
-          <LinkFooter href="https://github.com/adrielgama" target="_blank">
-            Adriel Gama
-          </LinkFooter>{" "}
-        </p>
+        {language === "pt-BR" ? (
+          <p>
+            {`Copyright © ${actualYear} Desenvolvido por `}{" "}
+            <LinkFooter href="https://github.com/adrielgama" target="_blank">
+              Adriel Gama
+            </LinkFooter>{" "}
+          </p>
+        ) : (
+          <p>
+            {`Copyright © ${actualYear} Developed by `}{" "}
+            <LinkFooter href="https://github.com/adrielgama" target="_blank">
+              Adriel Gama
+            </LinkFooter>{" "}
+          </p>
+        )}
       </FooterComponent>
     </>
   );

@@ -4,10 +4,11 @@ import { HeaderComponent, Content, TextAbout, ImageContainer } from "./style";
 import PortraitPhoto from "../../images/portrait.png";
 import Pulse from "react-reveal/Pulse";
 import Fade from "react-reveal/Fade";
-import Roll from "react-reveal/Roll";
 
-export const About = () => {
-  return (
+export const About = (...props: any[]) => {
+  const language = props[0].getLanguage;
+
+  return language === 'pt-BR' ? (
     <Container maxWidth="md">
       <HeaderComponent>
         <Fade>
@@ -38,11 +39,47 @@ export const About = () => {
               </p>
             </TextAbout>
           </Fade>
-          <Roll>
+          <Fade right>
             <ImageContainer>
               <img src={PortraitPhoto} alt="photo" />
             </ImageContainer>
-          </Roll>
+          </Fade>
+        </Content>
+      </HeaderComponent>
+    </Container>
+  ) : (
+    <Container maxWidth="md">
+      <HeaderComponent>
+        <Fade>
+          <Pulse>
+            <h5>About me</h5>
+          </Pulse>
+        </Fade>
+        <Content>
+          <Fade left cascade>
+            <TextAbout>
+              <p>
+                Hi, I'm Adriel Gama. Nice to meet you. I'm a developer
+                <br />
+                <br />
+                Front-end, located in Salvador/Brazil. I have a passion for
+                building web pages, and a huge enthusiasm in being able to make
+                the entire user experience visually beautiful and faithful to
+                the proposal.
+                <br />
+                <br />I'm organized, I like challenges and problem solving, I
+                have a high attention to detail. Interested in the entire
+                Frontend spectrum and working on ambitious projects with
+                extremely positive people. I'm quietly confident, naturally
+                curious and perpetually working to improve my skills.
+              </p>
+            </TextAbout>
+          </Fade>
+          <Fade right>
+            <ImageContainer>
+              <img src={PortraitPhoto} alt="photo" />
+            </ImageContainer>
+          </Fade>
         </Content>
       </HeaderComponent>
     </Container>

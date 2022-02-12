@@ -22,6 +22,20 @@ export const ChevronIcon = styled.div`
   cursor: pointer;
   transition: 550ms;
 
+  animation: mouse 2s ease-in-out infinite;
+
+  @keyframes mouse {
+    0% {
+      bottom: 50px;
+    }
+    50% {
+      bottom: 10px;
+    }
+    100% {
+      bottom: 50px;
+    }
+  }
+
   :hover {
     color: ${ColorPallete.textWhite};
   }
@@ -30,28 +44,4 @@ export const ChevronIcon = styled.div`
     color: inherit;
     text-decoration: inherit;
   }
-`;
-
-export const Languages = styled.div`
-  cursor: pointer;
-  opacity: 0.8;
-
-  > img {
-    max-width: 26px;
-    margin-left: 1vh;
-  }
-
-  :hover {
-    opacity: 1;
-  }
-`;
-
-export const ContainerLanguages = styled.div`
-  position: absolute;
-  top: 1.5vh;
-  right: 2vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0 1vh;
 `;

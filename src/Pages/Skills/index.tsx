@@ -61,7 +61,9 @@ const PaperStyled = styled(Paper)`
   }
 `;
 
-export const Skills = () => {
+export const Skills = (...props: any[]) => {
+  const language = props[0].getLanguage;
+
   const devSkill = [
     "HTML5",
     "CSS3",
@@ -96,13 +98,13 @@ export const Skills = () => {
         <HeaderComponent>
           <Pulse>
             <Fade left cascade>
-              <h1>Habilidades</h1>
+              {language === "pt-BR" ? <h1>Habilidades</h1> : <h1>Skills</h1>}
             </Fade>
           </Pulse>
         </HeaderComponent>
 
         {/* CARD CONTENT  */}
-        <Pulse  cascade>
+        <Pulse cascade>
           <BoxStyled
             sx={{
               display: "flex",
@@ -118,7 +120,7 @@ export const Skills = () => {
                 <HiOutlineCode />
               </div>
               <h2>Front-end</h2>
-              <h4>Tools:</h4>
+              {language === "pt-BR" ? <h4>Ferramentas:</h4> : <h4>Tools:</h4>}
               <ul>
                 {devSkill.map((data, index) => {
                   return (
@@ -135,7 +137,7 @@ export const Skills = () => {
                 <ImPencil2 />
               </div>
               <h2>Designer</h2>
-              <h4>Tools:</h4>
+              {language === "pt-BR" ? <h4>Ferramentas:</h4> : <h4>Tools:</h4>}
               <ul>
                 {designSkill.map((data, index) => {
                   return (
@@ -153,7 +155,7 @@ export const Skills = () => {
         <div
           style={{ backgroundColor: `${ColorPallete.secondary}`, zIndex: 1 }}
         >
-          <Contact />
+          <Contact getLanguage={language} />
         </div>
       </Fade>
     </>
