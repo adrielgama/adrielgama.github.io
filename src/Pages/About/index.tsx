@@ -8,7 +8,7 @@ import Fade from "react-reveal/Fade";
 export const About = (...props: any[]) => {
   const language = props[0].getLanguage;
 
-  return language === 'pt-BR' ? (
+  return language === "pt-BR" ? (
     <Container maxWidth="md">
       <HeaderComponent>
         <Fade>
@@ -21,13 +21,12 @@ export const About = (...props: any[]) => {
             <TextAbout>
               <p>
                 Olá, eu sou o Adriel Gama. Prazer em conhecê-lo. Sou
-                desenvolvedor
+                desenvolvedor Front-end, localizado em Salvador/Brasil.
                 <br />
                 <br />
-                Front-end, localizado em Salvador/Brasil. Tenho uma paixão pela
-                construção de páginas web, e o entusiasmo enorme em poder fazer
-                com que toda a experiência de usuário seja visualmente linda e
-                fiel a proposta.
+                Tenho uma paixão pela construção de páginas web, e o entusiasmo
+                enorme em poder fazer com que toda a experiência de usuário seja
+                visualmente linda e fiel a proposta.
                 <br />
                 <br />
                 Sou organizado, gosto de desafios e solucionar problemas, tenho
@@ -60,18 +59,19 @@ export const About = (...props: any[]) => {
             <TextAbout>
               <p>
                 Hi, I'm Adriel Gama. Nice to meet you. I'm a developer
+                Front-end, located in Salvador/Brazil.
                 <br />
                 <br />
-                Front-end, located in Salvador/Brazil. I have a passion for
-                building web pages, and a huge enthusiasm in being able to make
-                the entire user experience visually beautiful and faithful to
-                the proposal.
+                I have a passion for building web pages, and a huge enthusiasm
+                in being able to make the entire user experience visually
+                beautiful and faithful to the proposal.
                 <br />
-                <br />I'm organized, I like challenges and problem solving, I
-                have a high attention to detail. Interested in the entire
-                Frontend spectrum and working on ambitious projects with
-                extremely positive people. I'm quietly confident, naturally
-                curious and perpetually working to improve my skills.
+                <br />
+                I'm organized, I like challenges and problem solving, I have a
+                high attention to detail. Interested in the entire Frontend
+                spectrum and working on ambitious projects with extremely
+                positive people. I'm quietly confident, naturally curious and
+                perpetually working to improve my skills.
               </p>
             </TextAbout>
           </Fade>

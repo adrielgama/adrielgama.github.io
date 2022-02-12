@@ -104,9 +104,7 @@ function App() {
     <div className="App">
       <a
         href={
-          language === "pt-BR"
-            ? "/public/files/ResumePT.pdf"
-            : "/public/files/ResumeEN.pdf"
+          language === "pt-BR" ? "/files/ResumePT.pdf" : "/files/ResumeEN.pdf"
         }
         target="_blank"
         rel="noreferrer"

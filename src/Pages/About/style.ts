@@ -49,7 +49,6 @@ export const TextAbout = styled.div`
   @media only screen and (max-width: 768px) {
     font-size: 14px;
     padding: 0 10px 40px 10px;
-    text-align: justify;
     margin-right: 0;
   }
 `;
