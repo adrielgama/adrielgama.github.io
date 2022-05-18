@@ -21,7 +21,15 @@ export const About = (...props: any[]) => {
             <TextAbout>
               <p>
                 Olá, eu sou o Adriel Gama. Prazer em conhecê-lo. Sou
-                desenvolvedor Front-end, localizado em Salvador/Brasil.
+                desenvolvedor Front-end PL pelo{" "}
+                <a
+                  href="https://www.farmaciasapp.com.br/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Farmácias App
+                </a>
+                , localizado em Salvador/Brasil.
                 <br />
                 <br />
                 Tenho uma paixão pela construção de páginas web, e o entusiasmo
@@ -58,8 +66,16 @@ export const About = (...props: any[]) => {
           <Fade left cascade>
             <TextAbout>
               <p>
-                Hi, I'm Adriel Gama. Nice to meet you. I'm a developer
-                Front-end, located in Salvador/Brazil.
+                Hi, I'm Adriel Gama. Nice to meet you. I'm a developer Front-end
+                PL on{" "}
+                <a
+                  href="https://www.farmaciasapp.com.br/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Farmácias App
+                </a>
+                , located in Salvador/Brazil.
                 <br />
                 <br />
                 I have a passion for building web pages, and a huge enthusiasm

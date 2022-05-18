@@ -46,6 +46,14 @@ export const TextAbout = styled.div`
   text-align: left;
   margin-right: 50px;
 
+  a {
+    color: ${ColorPallete.textBlack};
+
+    :hover {
+      color: ${ColorPallete.textGrey};
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     font-size: 14px;
     padding: 0 10px 40px 10px;

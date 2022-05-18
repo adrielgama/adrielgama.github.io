@@ -72,6 +72,7 @@ const FabComponent = styled.button`
   @keyframes shake {
     0% {
       transform: translate(0, 0);
+      background: #33cccc;
     }
     1.78571% {
       transform: translate(5px, 0);
@@ -91,8 +92,21 @@ const FabComponent = styled.button`
     10.71429% {
       transform: translate(0, 0);
     }
+    20% {
+      background: #33cc36;
+    }
+    40% {
+      background: #b8cc33;
+    }
+    60% {
+      background: #fcca00;
+    }
+    80% {
+      background: #33cc36;
+    }
     100% {
       transform: translate(0, 0);
+      background: #33cccc;
     }
   }
 `;

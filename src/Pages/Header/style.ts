@@ -11,6 +11,12 @@ export const HeaderComponent = styled.div`
   color: ${ColorPallete.textWhite};
   font-size: 64px;
   text-align: center;
+
+  @media only screen and (max-width: 426px) {
+    p {
+      font-size: 3.6rem;
+    }
+  }
 `;
 
 export const ChevronIcon = styled.div`
