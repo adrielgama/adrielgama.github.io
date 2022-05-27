@@ -88,7 +88,7 @@ export const Contact = (...props: any[]) => {
                 </Tooltip>
                 <Tooltip title="Linkedin" placement="top">
                   <Linkedin
-                    href="https://github.com/adrielgama"
+                    href="https://www.linkedin.com/in/adrielgama/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -97,7 +97,7 @@ export const Contact = (...props: any[]) => {
                 </Tooltip>
                 <Tooltip title="Instagram" placement="top">
                   <Insta
-                    href="https://github.com/adrielgama"
+                    href="https://www.instagram.com/adrielgama/"
                     target="_blank"
                     rel="noreferrer"
                   >
