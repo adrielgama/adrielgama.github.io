@@ -1,6 +1,6 @@
 import { Container, Box, Paper } from "@mui/material";
 import styled from "styled-components";
-import { Contact } from "../Contact/index";
+import { Contact } from "../Contact_Old/index";
 import { ColorPallete } from "../../themes/theme";
 import { HeaderComponent } from "./style";
 import { HiOutlineCode } from "react-icons/hi";

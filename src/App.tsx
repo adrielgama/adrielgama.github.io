@@ -1,12 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useState } from "react";
-import { ColorPallete } from "./themes/theme";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-import { Header } from "./Pages/Header";
-import { About } from "./Pages/About";
-import { Skills } from "./Pages/Skills";
-import { BsDownload } from "react-icons/bs";
+import { Home } from "./Pages/Home";
 
 import BrazilFlag from "./images/brazil.png";
 import UsaFlag from "./images/usa.png";
@@ -37,97 +32,11 @@ const ContainerLanguages = styled.div`
   z-index: 999;
 `;
 
-const FabComponent = styled.button`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  position: fixed;
-  bottom: 30px;
-  right: -150px;
-  background-color: ${ColorPallete.secondary};
-  border-radius: 10px 0 0 10px;
-  padding: 10px;
-  color: ${ColorPallete.main};
-  z-index: 999;
-
-  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.18);
-  -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.18);
-
-  transition: 450ms;
-  cursor: pointer;
-
-  svg {
-    margin-right: 10px;
-  }
-
-  :hover {
-    right: 0;
-    animation: none;
-  }
-
-  animation: shake 3.72s ease infinite;
-
-  @keyframes shake {
-    0% {
-      transform: translate(0, 0);
-      background: #33cccc;
-    }
-    1.78571% {
-      transform: translate(5px, 0);
-    }
-    3.57143% {
-      transform: translate(0, 0);
-    }
-    5.35714% {
-      transform: translate(5px, 0);
-    }
-    7.14286% {
-      transform: translate(0, 0);
-    }
-    8.92857% {
-      transform: translate(5px, 0);
-    }
-    10.71429% {
-      transform: translate(0, 0);
-    }
-    20% {
-      background: #33cc36;
-    }
-    40% {
-      background: #b8cc33;
-    }
-    60% {
-      background: #fcca00;
-    }
-    80% {
-      background: #33cc36;
-    }
-    100% {
-      transform: translate(0, 0);
-      background: #33cccc;
-    }
-  }
-`;
-
 function App() {
   const [language, setLanguage] = useState("pt-BR");
 
   return (
     <div className="App">
-      <a
-        href={
-          language === "pt-BR" ? "/files/ResumePT.pdf" : "/files/ResumeEN.pdf"
-        }
-        target="_blank"
-        rel="noreferrer"
-      >
-        <FabComponent>
-          <BsDownload />
-          <p>Download Resume CV</p>
-        </FabComponent>
-      </a>
       <ContainerLanguages>
         <Languages onClick={() => setLanguage("pt-BR")}>
           <img src={BrazilFlag} alt="pt-BR" />
@@ -138,22 +47,7 @@ function App() {
       </ContainerLanguages>
 
       <Fade bottom>
-        <div style={{ backgroundColor: `${ColorPallete.main}` }}>
-          <Header getLanguage={language} />
-        </div>
-      </Fade>
-      <Fade bottom>
-        <div
-          style={{ backgroundColor: `${ColorPallete.secondary}` }}
-          id="about"
-        >
-          <About getLanguage={language} />
-        </div>
-      </Fade>
-      <Fade bottom>
-        <div style={{ backgroundColor: `${ColorPallete.main}`, zIndex: 999 }}>
-          <Skills getLanguage={language} />
-        </div>
+        <Home getLanguage={language} />
       </Fade>
     </div>
   );
