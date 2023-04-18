@@ -12,9 +12,19 @@ export const Header = (...props: any[]) => {
       <HeaderComponent>
         <Pulse>
           <Fade left cascade>
-            <p>
-              Olá, me chamo <b>Adriel Gama</b> e sou dev Front-end
-            </p>
+            <a
+              href={
+                language === "pt-BR"
+                  ? "/files/ResumePT.pdf"
+                  : "/files/ResumeEN.pdf"
+              }
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p>
+                Olá, me chamo <b>Adriel Gama</b> e sou dev Front-end
+              </p>
+            </a>
           </Fade>
         </Pulse>
       </HeaderComponent>
@@ -29,9 +39,19 @@ export const Header = (...props: any[]) => {
       <HeaderComponent>
         <Pulse>
           <Fade left cascade>
-            <p>
-              Hi, my name is <b>Adriel Gama</b> and I'm Front-end dev
-            </p>
+            <a
+              href={
+                language === "pt-BR"
+                  ? "/files/ResumePT.pdf"
+                  : "/files/ResumeEN.pdf"
+              }
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p>
+                Hi, my name is <b>Adriel Gama</b> and I'm Front-end dev
+              </p>
+            </a>
           </Fade>
         </Pulse>
       </HeaderComponent>

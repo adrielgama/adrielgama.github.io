@@ -12,6 +12,17 @@ export const HeaderComponent = styled.div`
   font-size: 64px;
   text-align: center;
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover {
+    transition: ease-in-out;
+    text-decoration: underline;
+    opacity: 0.2;
+  }
+
   @media only screen and (max-width: 426px) {
     p {
       font-size: 3.6rem;
