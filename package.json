@@ -17,7 +17,8 @@
     "format:check": "prettier -c .",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
     "prepare": "husky install",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "export": "next export"
   },
   "dependencies": {
     "@radix-ui/react-tooltip": "^1.0.6",
