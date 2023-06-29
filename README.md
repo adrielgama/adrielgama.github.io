@@ -39,7 +39,7 @@ This project was developed with the intention of studying the new application of
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/AdrielGama/adrielgama.github.io/blob/master/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/adrielgama/adrielgama.github.io/blob/main/LICENCE.md) for more information.
 
 ## Author
 
