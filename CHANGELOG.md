@@ -1,5 +1,3 @@
-<!-- //!STARTERCONF Remove this file, this is used as the starter changelog -->
-
 # ts-nextjs-tailwind-starter changelog
 
 This changelog is manually generated and not accurate with the package.json, only to show the changes since the last release.
@@ -161,7 +159,7 @@ This changelog is manually generated and not accurate with the package.json, onl
 - #### Change default theme to white
 
     | ![Home Page](https://user-images.githubusercontent.com/55318172/144386763-00e6c3fd-ee2e-4c9e-87f8-18b036bdc2e1.png) | ![404](https://user-images.githubusercontent.com/55318172/144386764-0e4b4fb0-35a8-4725-a795-f998b06543a1.png) |
-    | - | - |
+    | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 
 ### Improvements & Bug Fixes
 
@@ -192,8 +190,8 @@ This changelog is manually generated and not accurate with the package.json, onl
 
 - #### Create Branch & Auto Resolve Issue Actions
 
-    | ![Create Branch Actions](https://user-images.githubusercontent.com/55318172/144379834-8c3e4d4f-d584-4253-9ad8-b9f1d468ed01.gif) <br> Auto Create Branch | ![Auto Resolve](https://user-images.githubusercontent.com/55318172/144382044-0132e755-9cd5-4805-a756-4086f67b3282.gif) <br> Auto Resolve  |
-    | :--: | :--: |
+    | ![Create Branch Actions](https://user-images.githubusercontent.com/55318172/144379834-8c3e4d4f-d584-4253-9ad8-b9f1d468ed01.gif) <br> Auto Create Branch | ![Auto Resolve](https://user-images.githubusercontent.com/55318172/144382044-0132e755-9cd5-4805-a756-4086f67b3282.gif) <br> Auto Resolve |
+    | :-----------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------: |
 
     You have to install the app for your organization/account/repository from the [GitHub Marketplace](https://github.com/marketplace/create-issue-branch) for this to work.
 

@@ -1,69 +1,73 @@
+import { FileText, Github, Linkedin } from 'lucide-react';
 import * as React from 'react';
 
 import Layout from '@/components/layout/Layout';
-import ArrowLink from '@/components/links/ArrowLink';
-import ButtonLink from '@/components/links/ButtonLink';
+import PrimaryLink from '@/components/links/PrimaryLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
-
-/**
- * SVGR Support
- * Caveat: No React Props Type.
- *
- * You can override the next-env if the type is important to you
- * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
- */
-import Vercel from '~/svg/Vercel.svg';
-
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
-// Before you begin editing, follow all comments with `STARTERCONF`,
-// to customize the default configuration.
+import Tooltip from '@/components/tooltip';
 
 export default function HomePage() {
   return (
     <Layout>
-      {/* <Seo templateTitle='Home' /> */}
       <Seo />
 
       <main>
-        <section className='bg-white'>
-          <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
-            <Vercel className='text-5xl' />
-            <h1 className='mt-4'>
-              Next.js + Tailwind CSS + TypeScript Starter
+        <section className='bg-color-dark'>
+          <div className='layout relative flex h-screen flex-col items-center justify-center py-12'>
+            <p className='layout text-light relative mt-2 text-sm'>
+              Hi, I&rsquo;m Adriel
+            </p>
+            <div className='layout flex flex-row items-baseline justify-start '>
+              <h1 className='text-light relative mr-12 flex text-start uppercase'>
+                React
+              </h1>
+              <div className='flex flex-row justify-center justify-items-start gap-7'>
+                <UnstyledLink href='https://www.linkedin.com/in/adrielgama/'>
+                  <Tooltip text='LinkedIn'>
+                    <Linkedin className='fill-grey300 hover:fill-grey100 svg' />
+                  </Tooltip>
+                </UnstyledLink>
+                <UnstyledLink href='https://github.com/adrielgama'>
+                  <Tooltip text='Github'>
+                    <Github className='svg' />
+                  </Tooltip>
+                </UnstyledLink>
+                <UnstyledLink
+                  href='./documents/ResumeAdrielGama2023.pdf'
+                  download
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <Tooltip text='Resume'>
+                    <FileText className='svg' />
+                  </Tooltip>
+                </UnstyledLink>
+              </div>
+            </div>
+            <h1 className='layout  text-dark  bg-light relative text-start uppercase'>
+              Developer
             </h1>
-            <p className='mt-2 text-sm text-gray-800'>
-              A starter for Next.js, Tailwind CSS, and TypeScript with Absolute
-              Import, Seo, Link component, pre-configured with Husky{' '}
-            </p>
-            <p className='mt-2 text-sm text-gray-700'>
-              <ArrowLink href='https://github.com/theodorusclarence/ts-nextjs-tailwind-starter'>
-                See the repository
-              </ArrowLink>
+            <p className=' text-light mt-8 max-w-2xl text-center text-sm'>
+              I&rsquo;m a Front-end developer with 4 years of experience in
+              responsive web projects. My strength lies in translating complex
+              designs into interactive and efficient interfaces, ensuring
+              compatibility with various browsers and devices, with the aim of
+              delivering innovativesolutions that enhance the user experience.
             </p>
 
-            <ButtonLink className='mt-6' href='/components' variant='light'>
-              See all components
-            </ButtonLink>
-
-            <UnstyledLink
-              href='https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Ftheodorusclarence%2Fts-nextjs-tailwind-starter'
-              className='mt-4'
+            <PrimaryLink
+              className='text-grey300 mt-6 hover:text-gray-600'
+              href='#'
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                width='92'
-                height='32'
-                src='https://vercel.com/button'
-                alt='Deploy with Vercel'
-              />
-            </UnstyledLink>
+              Projects (coming soon)
+            </PrimaryLink>
 
-            <footer className='absolute bottom-2 text-gray-700'>
+            <footer className='absolute bottom-2 text-gray-600'>
               © {new Date().getFullYear()} By{' '}
-              <UnderlineLink href='https://theodorusclarence.com?ref=tsnextstarter'>
-                Theodorus Clarence
+              <UnderlineLink href='https://github.com/adrielgama'>
+                Adriel Gama
               </UnderlineLink>
             </footer>
           </div>
