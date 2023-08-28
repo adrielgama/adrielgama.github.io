@@ -7,11 +7,11 @@
   <h3 align="center">Adriel Gama - Resume 2023</h3>
 
   <p align="center">
-    Project Developed with Next.JS 13
+    Project Developed with NextJS
     <br/>
     <br/>
     <br/>
-    <a href="https://adrielgama.dev">View Demo</a>
+    <a href="https://adrielgama.dev">View site</a>
     .
     <a href="https://github.com/AdrielGama/adrielgama.github.io/issues">Report Bug</a>
     .
@@ -21,7 +21,7 @@
 
 <div align="center">
 
-![Contributors](https://img.shields.io/github/contributors/AdrielGama/adrielgama.github.io?color=dark-green) ![Stargazers](https://img.shields.io/github/stars/AdrielGama/adrielgama.github.io?style=social) ![License](https://img.shields.io/github/license/AdrielGama/adrielgama.github.io)
+![Contributors](https://img.shields.io/github/contributors/AdrielGama/adrielgama.github.io?color=dark-green) ![Stargazers](https://img.shields.io/github/stars/AdrielGama/adrielgama.github.io?style=social)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
 
