@@ -54,7 +54,7 @@ export const Home = () => {
               responsive web projects. My strength lies in translating complex
               designs into interactive and efficient interfaces, ensuring
               compatibility with various browsers and devices, with the aim of
-              delivering innovativesolutions that enhance the user experience.
+              delivering innovative solutions that enhance the user experience.
             </p>
 
             <ButtonLink href='/projects' className='mt-6 hover:text-gray-500'>
