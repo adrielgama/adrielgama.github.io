@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 module.exports = {
   darkMode: ['class'],
   content: [
@@ -15,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        primary: ['Montserrat', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
