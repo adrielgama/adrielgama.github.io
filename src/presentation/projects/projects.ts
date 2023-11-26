@@ -20,7 +20,7 @@ export const myProjects = [
       'YUP',
       'UI-Kit Fapp',
     ],
-    image: '/src/assets/farmaciasapp.webp',
+    image: '/assets/farmaciasapp.webp',
     link: 'https://www.farmaciasapp.com.br/',
   },
   {
@@ -40,7 +40,7 @@ export const myProjects = [
       'React Query',
       'ZOD',
     ],
-    image: '/src/assets/josiane-mendonca.webp',
+    image: '/assets/josiane-mendonca.webp',
     link: 'https://www.josianemendonca.adv.br/',
   },
   {
@@ -59,7 +59,7 @@ export const myProjects = [
       'Cloudinary',
       'ZOD',
     ],
-    image: '/src/assets/blag-dashboard.webp',
+    image: '/assets/blag-dashboard.webp',
     link: 'https://blag.adrielgama.dev/',
   },
   {
@@ -83,7 +83,7 @@ export const myProjects = [
       'Bull',
       'Railway',
     ],
-    image: '/src/assets/api.webp',
+    image: '/assets/api.webp',
     link: 'https://github.com/adrielgama/blag-api',
   },
   {
@@ -105,7 +105,7 @@ export const myProjects = [
       'Jest',
       'React Lottie',
     ],
-    image: '/src/assets/ui-kit-farmaciasapp.webp',
+    image: '/assets/ui-kit-farmaciasapp.webp',
     link: 'https://ui-kit.poc.fappdev.com/',
   },
   {
@@ -125,7 +125,7 @@ export const myProjects = [
       'ZOD',
       'React Fast Marquee',
     ],
-    image: '/src/assets/tapetes-e-tal.webp',
+    image: '/assets/tapetes-e-tal.webp',
     link: 'https://www.tapetesetal.com.br/',
   },
 ]
