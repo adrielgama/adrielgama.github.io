@@ -1,8 +1,4 @@
-import React from 'react'
-
-import { Badge } from '../ui/badge'
-
-const mySkills = [
+export const mySkills = [
   'HTML',
   'CSS',
   'JavaScript',
@@ -15,6 +11,7 @@ const mySkills = [
   'Styled Components',
   'Bootstrap',
   'Material UI',
+  'Emotion',
   'Storybook',
   'SASS',
   'ZOD',
@@ -30,6 +27,10 @@ const mySkills = [
   'AWS Amplify',
   'Node',
   'Express',
+  'Axios',
+  'Nookies',
+  'React Query',
+  'SQL',
   'API RESTful',
   'UI/UX',
   'Figma',
@@ -38,15 +39,3 @@ const mySkills = [
   'Scrum',
   'Kanban',
 ]
-
-export const Skills = () => {
-  return (
-    <div>
-      {mySkills.map((skill) => (
-        <Badge key={skill} variant="secondary" className="mr-1">
-          {skill}
-        </Badge>
-      ))}
-    </div>
-  )
-}

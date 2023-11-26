@@ -1,16 +1,20 @@
+import { Footer } from '@/components/footer'
 import { ModeToggle } from '@/components/mode-toggle'
-import { Presentation } from '@/components/presentation'
-import { Skills } from '@/components/skills'
+import { AboutMe } from '@/presentation/about'
+import { MyProjects } from '@/presentation/projects'
+import { Skills } from '@/presentation/skills'
 
 function App() {
   return (
-    <div className="h-screen w-screen dark:bg-background bg-slate-50">
-      <div className="container flex justify-end pt-2">
+    <div className="h-full w-full bg-slate-50 dark:bg-background">
+      <div className="container flex max-w-4xl justify-end pt-2">
         <ModeToggle />
       </div>
-      <div className="container">
-        <Presentation />
+      <div className="container max-w-4xl">
+        <AboutMe />
         <Skills />
+        <MyProjects />
+        <Footer />
       </div>
     </div>
   )

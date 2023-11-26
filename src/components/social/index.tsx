@@ -23,7 +23,7 @@ const TooltipIcon = ({
   return (
     <Tooltip>
       <TooltipTrigger>
-        <IconComponent className={cn(className)} />
+        <IconComponent className={`${cn(className)} md:h-8 md:w-8`} />
       </TooltipTrigger>
       <TooltipContent>
         <p>{tooltipContent}</p>
@@ -36,16 +36,30 @@ export const SocialIcons = () => {
   return (
     <div className="flex gap-4">
       <TooltipProvider>
-        <TooltipIcon
-          IconComponent={Linkedin}
-          tooltipContent="LinkedIn"
-          className="fill-white hover:fill-gray-100 svg"
-        />
-        <TooltipIcon IconComponent={Github} tooltipContent="Github" />
-        <TooltipIcon
-          IconComponent={FileText}
-          tooltipContent="Resume download"
-        />
+        <a
+          href="http://www.linkedin.com/in/adrielgama"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TooltipIcon
+            IconComponent={Linkedin}
+            tooltipContent="LinkedIn"
+            className="svg fill-white hover:fill-gray-100"
+          />
+        </a>
+        <a
+          href="http://github.com/adrielgama"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TooltipIcon IconComponent={Github} tooltipContent="Github" />
+        </a>
+        <a href="/resume.pdf" download="resume.pdf">
+          <TooltipIcon
+            IconComponent={FileText}
+            tooltipContent="Resume download"
+          />
+        </a>
       </TooltipProvider>
     </div>
   )

@@ -1,21 +1,21 @@
 import React from 'react'
 
-import { SocialIcons } from '../social'
+import { SocialIcons } from '../../components/social'
 
-export const Presentation = () => {
+export const AboutMe = () => {
   return (
     <div className="flex flex-col justify-center py-12">
       <p className="text-sm">Hi, I&rsquo;m Adriel</p>
-      <div className="relative flex text-start space-x-8 items-baseline">
-        <h1 className="font-primary text-4xl font-bold lg:text-8xl md:text-6xl uppercase">
+      <div className="relative flex items-baseline space-x-8 text-start">
+        <h1 className="font-primary text-4xl font-bold uppercase md:text-6xl lg:text-8xl">
           React
         </h1>
         <SocialIcons />
       </div>
-      <h1 className="font-primary text-4xl font-bold lg:text-8xl md:text-6xl uppercase bg-secondary mt-1 pt-2">
+      <h1 className="mt-1 bg-secondary pt-2 font-primary text-4xl font-bold uppercase md:text-6xl lg:text-8xl">
         Developer
       </h1>
-      <p className="mt-8 max-w-2xl text-justify text-sm md:text-center">
+      <p className="mt-8 max-w-2xl text-justify text-sm md:max-w-6xl md:px-20 lg:px-32">
         I&rsquo;m a Front-end developer with 4 years of experience in responsive
         web projects. My strength lies in translating complex designs into
         interactive and efficient interfaces, ensuring compatibility with
