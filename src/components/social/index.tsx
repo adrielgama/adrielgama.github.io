@@ -40,6 +40,7 @@ export const SocialIcons = () => {
           href="http://www.linkedin.com/in/adrielgama"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn profile"
         >
           <TooltipIcon
             IconComponent={Linkedin}
@@ -51,10 +52,11 @@ export const SocialIcons = () => {
           href="http://github.com/adrielgama"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Github profile"
         >
           <TooltipIcon IconComponent={Github} tooltipContent="Github" />
         </a>
-        <a href="/resume.pdf" download="resume.pdf">
+        <a href="/resume.pdf" download="resume.pdf" aria-label="Resume">
           <TooltipIcon
             IconComponent={FileText}
             tooltipContent="Resume download"

@@ -8,6 +8,7 @@ export const Footer = () => {
         href="https://github.com/adrielgama"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="GitHub profile"
       >
         Adriel Gama - Front-end Developer
       </a>
