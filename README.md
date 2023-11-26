@@ -7,7 +7,7 @@
   <h3 align="center">Adriel Gama - Resume 2023</h3>
 
   <p align="center">
-    Project Developed with NextJS
+    Project Developed Vite + Typescript + Tailwind + Shadcn
     <br/>
     <br/>
     <br/>
@@ -33,7 +33,7 @@
 
 ## About The Project
 
-![Screen Shot](/public/images/preview.png)
+![Screen Shot](/public/preview.webp)
 
 This project was developed with the intention of studying the new application of Next.JS 13 with Tailwind and some other tools. It was created thinking about the integration with future projects with an internal navigation, using links from external projects.
 

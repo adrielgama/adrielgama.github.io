@@ -1,56 +1,29 @@
-import { ChevronLeft } from 'lucide-react';
-import React from 'react';
+import React from 'react'
 
-import { Card } from '../../components/card';
-import Layout from '../../components/layout/Layout';
-import PrimaryLink from '../../components/links/PrimaryLink';
-import UnderlineLink from '../../components/links/UnderlineLink';
-import Seo from '../../components/Seo';
-import { projectList } from '../../presentation/projects/projectList';
+import { Card } from './card'
+import { myProjects } from './projects'
 
-export const ProjectsPage = () => {
+export const MyProjects = () => {
   return (
-    <Layout>
-      <Seo />
-
-      <main>
-        <section className='bg-dark'>
-          <div className='layout relative flex h-screen flex-col items-center justify-center py-4 sm:py-12'>
-            <h3 className='text-light absolute top-8 hidden text-start uppercase sm:flex'>
-              Projects
-            </h3>
-            <PrimaryLink
-              className='text-grey300 absolute left-2 top-2 mt-6 flex text-start hover:text-gray-600'
-              href='/'
-            >
-              <ChevronLeft className='mr-2' size={16} />
-              Back to Home
-            </PrimaryLink>
-            <div className='no-scrollbar container mb-4 mt-16 w-full overflow-y-scroll scroll-smooth p-4'>
-              {projectList.map(
-                ({ altImage, image, link, text, title, underConstruction }) => (
-                  <Card
-                    key={title}
-                    image={image}
-                    altImage={altImage}
-                    title={title}
-                    text={text}
-                    link={link}
-                    underConstruction={underConstruction}
-                  />
-                )
-              )}
-            </div>
-
-            <footer className='absolute bottom-2 text-gray-600'>
-              © {new Date().getFullYear()} By{' '}
-              <UnderlineLink href='https://github.com/adrielgama'>
-                Adriel Gama
-              </UnderlineLink>
-            </footer>
+    <div className="py-8">
+      <h1 className="mb-4 border-l-4 pl-2 text-2xl font-bold">Projects</h1>
+      {myProjects.map((project) => (
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          key={project.title}
+        >
+          <div className="mb-2 flex cursor-pointer flex-col rounded bg-gray-100 px-2 transition-all hover:bg-gray-200 dark:bg-gray-800/30 dark:hover:bg-gray-800/50 md:flex-row md:bg-transparent">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="my-4 mr-2 max-h-60 object-contain"
+            />
+            <Card {...project} />
           </div>
-        </section>
-      </main>
-    </Layout>
-  );
-};
+        </a>
+      ))}
+    </div>
+  )
+}
