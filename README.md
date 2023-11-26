@@ -35,7 +35,7 @@
 
 ![Screen Shot](/public/preview.webp)
 
-This project was developed with the intention of studying the new application of Next.JS 13 with Tailwind and some other tools. It was created thinking about the integration with future projects with an internal navigation, using links from external projects.
+This project was initially developed with Next.js 13, Tailwind CSS, TypeScript, and Shadcn. However, due to the need for a more modern and efficient build tool, the project was rewritten using **Vite**, **Tailwind CSS**, **TypeScript**, and **Shadcn**.
 
 ## License
 
