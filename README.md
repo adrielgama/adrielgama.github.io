@@ -1,30 +1,46 @@
-# React + TypeScript + Vite
+<br/>
+<p align="center">
+  <a href="https://github.com/AdrielGama/adrielgama.github.io">
+    <img src="/public/favicon/apple-touch-icon.png" alt="Logo" width="80" height="80" />
+  </a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <h3 align="center">Adriel Gama - Resume 2023</h3>
 
-Currently, two official plugins are available:
+  <p align="center">
+    Project Developed Vite + Typescript + Tailwind + Shadcn
+    <br/>
+    <br/>
+    <br/>
+    <a href="https://adrielgama.dev">View site</a>
+    .
+    <a href="https://github.com/AdrielGama/adrielgama.github.io/issues">Report Bug</a>
+    .
+    <a href="https://github.com/AdrielGama/adrielgama.github.io/issues">Request Feature</a>
+  </p>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<div align="center">
 
-## Expanding the ESLint configuration
+![Contributors](https://img.shields.io/github/contributors/AdrielGama/adrielgama.github.io?color=dark-green) ![Stargazers](https://img.shields.io/github/stars/AdrielGama/adrielgama.github.io?style=social)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+</div>
 
-- Configure the top-level `parserOptions` property like this:
+## Table Of Contents
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- [Creating A Pull Request](#creating-a-pull-request)
+- [License](#license)
+- [Author](#author)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## About The Project
+
+![Screen Shot](/public/preview.webp)
+
+This project was developed with the intention of studying the new application of Next.JS 13 with Tailwind and some other tools. It was created thinking about the integration with future projects with an internal navigation, using links from external projects.
+
+## License
+
+Distributed under the MIT License. See [LICENSE](https://github.com/adrielgama/adrielgama.github.io/blob/main/LICENCE.md) for more information.
+
+## Author
+
+- **Adriel Gama** - _Front End Developer_ - [Adriel Gama](https://adrielgama.dev)
