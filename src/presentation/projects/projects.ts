@@ -24,6 +24,22 @@ export const myProjects = [
     link: 'https://www.farmaciasapp.com.br/',
   },
   {
+    title: 'Onboarding - Farmácias APP',
+    description:
+      'Application developed as a welcome guide for new Farmácias APP employees',
+    technologies: [
+      'Vite',
+      'TypeScript',
+      'Tailwind',
+      'Shadcn',
+      'ESLint',
+      'Context API',
+      'Azure',
+    ],
+    image: '/assets/onboarding-farmaciasapp.webp',
+    link: 'https://onboarding.farmaciasapp.com.br/',
+  },
+  {
     title: 'Josiane Mendonça - Lawyer',
     description:
       'Professional platform for a labor lawyer, offering legal services and representation in labor law, with information about her experience, areas of practice, and contact details.',
