@@ -19,7 +19,7 @@ export const MyProjects = () => {
           target="_blank"
           rel="noopener noreferrer"
           key={project.title}
-          aria-label="Project link"
+          aria-label={`Project ${project.title} link`}
         >
           <div className="mb-2 flex cursor-pointer flex-col rounded bg-gray-100 px-2 transition-all hover:bg-gray-200 dark:bg-gray-800/30 dark:hover:bg-gray-800/50 md:flex-row md:bg-transparent">
             <img
