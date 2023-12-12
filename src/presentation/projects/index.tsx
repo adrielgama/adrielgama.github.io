@@ -1,9 +1,15 @@
 import React from 'react'
 
+import { cacheImages } from '@/lib/cacheImages'
+
 import { Card } from './card'
 import { myProjects } from './projects'
 
 export const MyProjects = () => {
+  React.useEffect(() => {
+    cacheImages(myProjects)
+  }, [])
+
   return (
     <div className="py-8">
       <h1 className="mb-4 border-l-4 pl-2 text-2xl font-bold">Projects</h1>
