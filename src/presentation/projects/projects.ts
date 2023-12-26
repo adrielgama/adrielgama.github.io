@@ -118,7 +118,6 @@ export const myProjects = [
       'Markdown',
       'Iconsax',
       'Husky',
-      'Jest',
       'React Lottie',
     ],
     image: '/assets/ui-kit-farmaciasapp.webp',
