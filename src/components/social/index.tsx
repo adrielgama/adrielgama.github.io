@@ -5,10 +5,11 @@ import { Linkedin, Github, FileText } from 'lucide-react'
 import {
   Tooltip,
   TooltipContent,
-  TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip'
 import { cn } from '@/lib/utils'
+
+import { useLanguage } from '../language-provider'
 
 interface TooltipIconProps extends React.SVGProps<SVGSVGElement> {
   IconComponent: React.ComponentType<{ className?: string }>
@@ -35,42 +36,49 @@ const TooltipIcon = ({
 }
 
 export const SocialIcons = () => {
+  const { language } = useLanguage()
   return (
     <div className="flex gap-4">
-      <TooltipProvider>
-        <a
-          href="http://www.linkedin.com/in/adrielgama"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn Profile"
-        >
-          <TooltipIcon
-            IconComponent={Linkedin}
-            tooltipContent="LinkedIn"
-            className="svg fill-white hover:fill-gray-100"
-            ariaLabel="LinkedIn Profile"
-          />
-        </a>
-        <a
-          href="http://github.com/adrielgama"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Github Profile"
-        >
-          <TooltipIcon
-            IconComponent={Github}
-            tooltipContent="Github"
-            ariaLabel="Github profile"
-          />
-        </a>
-        <a href="/resume.pdf" download="resume.pdf" aria-label="Resume">
-          <TooltipIcon
-            IconComponent={FileText}
-            tooltipContent="Resume download"
-            ariaLabel="Resume CV Download"
-          />
-        </a>
-      </TooltipProvider>
+      <a
+        href={
+          language === 'en'
+            ? 'http://www.linkedin.com/in/adrielgama'
+            : 'https://www.linkedin.com/in/adrielgama/?locale=pt_BR'
+        }
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn Profile"
+      >
+        <TooltipIcon
+          IconComponent={Linkedin}
+          tooltipContent="LinkedIn"
+          className="svg fill-white hover:fill-gray-100"
+          ariaLabel="LinkedIn Profile"
+        />
+      </a>
+      <a
+        href="http://github.com/adrielgama"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Github Profile"
+      >
+        <TooltipIcon
+          IconComponent={Github}
+          tooltipContent="Github"
+          ariaLabel="Github profile"
+        />
+      </a>
+      <a
+        href={language === 'en' ? 'resume.pdf' : 'resume_pt.pdf'}
+        download={language === 'en' ? 'resume.pdf' : 'resume_pt.pdf'}
+        aria-label="Resume"
+      >
+        <TooltipIcon
+          IconComponent={FileText}
+          tooltipContent="Resume download"
+          ariaLabel="Resume CV Download"
+        />
+      </a>
     </div>
   )
 }

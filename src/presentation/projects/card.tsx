@@ -6,7 +6,6 @@ interface ProjectProps {
   title: string
   description: string
   technologies: string[]
-  link: string
 }
 
 export const Card: React.FC<ProjectProps> = ({

@@ -1,18 +1,24 @@
 import React from 'react'
 
+import { useTranslation } from 'react-i18next'
+
 import { cacheImages } from '@/lib/cacheImages'
 
 import { Card } from './card'
 import { myProjects } from './projects'
 
 export const MyProjects = () => {
+  const { t } = useTranslation()
+
   React.useEffect(() => {
     cacheImages(myProjects)
   }, [])
 
   return (
     <div className="py-8">
-      <h1 className="mb-4 border-l-4 pl-2 text-2xl font-bold">Projects</h1>
+      <h1 className="mb-4 border-l-4 pl-2 text-2xl font-bold">
+        {t('projects.title')}
+      </h1>
       {myProjects.map((project) => (
         <a
           href={project.link}
@@ -27,7 +33,11 @@ export const MyProjects = () => {
               alt={project.title}
               className="my-4 mr-2 max-h-60 object-contain"
             />
-            <Card {...project} />
+            <Card
+              title={project.title}
+              description={t(`projects.${project.i18n}`)}
+              technologies={project.technologies}
+            />
           </div>
         </a>
       ))}
