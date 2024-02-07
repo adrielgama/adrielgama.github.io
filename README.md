@@ -4,10 +4,10 @@
     <img src="/public/favicon/apple-touch-icon.png" alt="Logo" width="80" height="80" />
   </a>
 
-  <h3 align="center">Adriel Gama - Resume 2023</h3>
+  <h3 align="center">Adriel Gama - Online Resume 2024</h3>
 
   <p align="center">
-    Project Developed Vite + Typescript + Tailwind + Shadcn
+    Project developed with Vite + Typescript + Tailwind + i18n + Shadcn
     <br/>
     <br/>
     <br/>
@@ -35,7 +35,7 @@
 
 ![Screen Shot](/public/preview.webp)
 
-This project was initially developed with Next.js 13, Tailwind CSS, TypeScript, and Shadcn. However, due to the need for a more modern and efficient build tool, the project was rewritten using **Vite**, **Tailwind CSS**, **TypeScript**, and **Shadcn**.
+This project was initially developed with Next.js 13, Tailwind CSS, TypeScript, and Shadcn. However, due to the need for a more modern and efficient build tool, the project was rewritten using **Vite**, **Tailwind CSS**, **TypeScript**, **i18n** and **Shadcn**.
 
 ## License
 
