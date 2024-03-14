@@ -52,7 +52,7 @@ export const SocialIcons = () => {
         <TooltipIcon
           IconComponent={Linkedin}
           tooltipContent="LinkedIn"
-          className="svg fill-white hover:fill-gray-100"
+          className="svg fill-white hover:text-blue-500 dark:hover:fill-blue-500 dark:hover:text-blue-500"
           ariaLabel="LinkedIn Profile"
         />
       </a>
@@ -66,6 +66,7 @@ export const SocialIcons = () => {
           IconComponent={Github}
           tooltipContent="Github"
           ariaLabel="Github profile"
+          className="hover:text-blue-500"
         />
       </a>
       <a
@@ -77,6 +78,7 @@ export const SocialIcons = () => {
           IconComponent={FileText}
           tooltipContent="Resume download"
           ariaLabel="Resume CV Download"
+          className="hover:text-blue-500"
         />
       </a>
     </div>

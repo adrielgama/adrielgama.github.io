@@ -1,6 +1,6 @@
 export const enAboutMe = {
   greeting: "Hi, I'm {{name}}!",
-  title: 'React',
+  title: 'Front-end',
   subtitle: 'Developer',
   description:
     "I'm a Front-end developer with {{yearsOfExperience}}+ years of experience in responsive web projects. My strength lies in translating complex designs into interactive and efficient interfaces, ensuring compatibility with various browsers and devices, with the aim of delivering innovative solutions that enhance the user experience.",
@@ -18,6 +18,7 @@ export const enProjects = {
     'Design System/UI-Kit of Farmácias APP group provides guidelines, components, and templates to enhance the user experience of their products.',
   tapetesETal:
     'Site for a company dedicated to the sale of customized carpets of various types.',
+  seeLink: 'View',
 }
 
 export const enLanguage = {

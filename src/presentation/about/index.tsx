@@ -12,7 +12,7 @@ export const AboutMe = () => {
     <div className="flex flex-col justify-center py-12">
       <p className="text-sm">{t('aboutMe.greeting', { name: 'Adriel' })}</p>
       <div className="relative flex items-baseline space-x-8 text-start">
-        <h1 className="font-primary text-4xl font-bold uppercase md:text-6xl lg:text-8xl">
+        <h1 className="font-primary text-2xl font-bold uppercase md:text-4xl lg:text-6xl">
           {t('aboutMe.title')}
         </h1>
         <SocialIcons />

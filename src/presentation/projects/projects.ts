@@ -59,6 +59,7 @@ export const myProjects = [
     ],
     image: '/assets/josiane-mendonca.webp',
     link: 'https://www.josianemendonca.adv.br/',
+    projectLink: 'https://github.com/adrielgama/josianemendonca.adv',
     i18n: 'josianeMendonca',
   },
   {
@@ -78,6 +79,7 @@ export const myProjects = [
     ],
     image: '/assets/blag-dashboard.webp',
     link: 'https://blag.adrielgama.dev/',
+    projectLink: 'https://github.com/adrielgama/blag-dashboard',
     i18n: 'blag',
   },
   {
@@ -102,6 +104,7 @@ export const myProjects = [
     ],
     image: '/assets/api.webp',
     link: 'https://github.com/adrielgama/blag-api',
+    projectLink: 'https://github.com/adrielgama/blag-api',
     i18n: 'blag',
   },
   {

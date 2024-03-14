@@ -20,26 +20,23 @@ export const MyProjects = () => {
         {t('projects.title')}
       </h1>
       {myProjects.map((project) => (
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
           key={project.title}
-          aria-label={`Project ${project.title} link`}
+          className="mb-2 flex flex-col rounded bg-gray-100 px-2 transition-all hover:bg-gray-200 dark:bg-gray-800/30 dark:hover:bg-gray-800/50 md:flex-row md:bg-transparent"
         >
-          <div className="mb-2 flex cursor-pointer flex-col rounded bg-gray-100 px-2 transition-all hover:bg-gray-200 dark:bg-gray-800/30 dark:hover:bg-gray-800/50 md:flex-row md:bg-transparent">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="my-4 mr-2 max-h-60 object-contain"
-            />
-            <Card
-              title={project.title}
-              description={t(`projects.${project.i18n}`)}
-              technologies={project.technologies}
-            />
-          </div>
-        </a>
+          <img
+            src={project.image}
+            alt={project.title}
+            className="my-4 mr-2 max-h-60 object-contain"
+          />
+          <Card
+            title={project.title}
+            description={t(`projects.${project.i18n}`)}
+            technologies={project.technologies}
+            link={project.link}
+            linkProject={project.projectLink}
+          />
+        </div>
       ))}
     </div>
   )

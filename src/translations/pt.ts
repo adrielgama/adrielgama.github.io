@@ -1,6 +1,6 @@
 export const ptAboutMe = {
   greeting: 'Olá, me chamo {{name}}!',
-  title: 'React',
+  title: 'Front-end',
   subtitle: 'Developer',
   description:
     'Sou um desenvolvedor Front-end com {{yearsOfExperience}}+ anos de experiência em projetos web responsivos. Minha especialidade está em traduzir designs complexos em interfaces interativas e eficientes, garantindo compatibilidade com diversos navegadores e dispositivos, com o objetivo de oferecer soluções inovadoras que aprimorem a experiência do usuário.',
@@ -19,6 +19,7 @@ export const ptProjects = {
     'O Design System/UI-Kit do grupo Farmácias APP fornece diretrizes, componentes e modelos para aprimorar a experiência do usuário de seus produtos.',
   tapetesETal:
     'Site para uma empresa dedicada à venda de tapetes personalizados de vários tipos.',
+  seeLink: 'Acessar',
 }
 
 export const ptLanguage = {
