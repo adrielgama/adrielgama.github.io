@@ -35,6 +35,7 @@ export const MyProjects = () => {
             technologies={project.technologies}
             link={project.link}
             linkProject={project.projectLink}
+            development={project.development}
           />
         </div>
       ))}

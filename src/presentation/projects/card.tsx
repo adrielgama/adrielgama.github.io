@@ -12,6 +12,7 @@ interface ProjectProps {
   technologies: string[]
   link: string
   linkProject?: string
+  development?: boolean
 }
 
 export const Card: React.FC<ProjectProps> = ({
@@ -20,12 +21,20 @@ export const Card: React.FC<ProjectProps> = ({
   technologies,
   link,
   linkProject,
+  development = false,
 }) => {
   const { t } = useTranslation()
 
   return (
     <div key={title} className="my-2 rounded p-6">
-      <h1 className="text-xl font-bold">{title}</h1>
+      <div>
+        <h1 className="text-xl font-bold">{title}</h1>
+        {development && (
+          <p className="text-xs italic text-gray-400 dark:text-gray-500">
+            {t('projects.development')}
+          </p>
+        )}
+      </div>
       <p className="my-4">{description}</p>
 
       {technologies.map((technology) => (
