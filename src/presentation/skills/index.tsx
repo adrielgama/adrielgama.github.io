@@ -30,7 +30,7 @@ export const Skills = () => {
         ))}
       </div>
       <button
-        className={`absolute left-0 right-0 z-10 flex h-16 w-full items-end justify-center pb-2 transition-opacity duration-500 ${
+        className={`absolute left-0 right-0 flex h-16 w-full items-end justify-center pb-2 transition-opacity duration-500 ${
           expanded
             ? '-bottom-14 bg-transparent'
             : 'bottom-0 bg-gradient-to-t from-gray-200 to-transparent dark:from-black '

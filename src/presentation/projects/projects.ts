@@ -86,7 +86,7 @@ export const myProjects = [
       'Railway',
     ],
     image: '/assets/api.webp',
-    link: 'https://github.com/adrielgama/blag-api',
+    link: 'https://api.adrielgama.dev/',
     projectLink: 'https://github.com/adrielgama/blag-api',
     i18n: 'blag',
   },
