@@ -18,7 +18,9 @@ export const enProjects = {
     'Design System/UI-Kit of Farmácias APP group provides guidelines, components, and templates to enhance the user experience of their products.',
   tapetesETal:
     'Site for a company dedicated to the sale of customized carpets of various types.',
+  rapidResume: 'Application for creating resumes in a quick and easy way.',
   seeLink: 'View',
+  development: 'Development',
 }
 
 export const enLanguage = {

@@ -19,7 +19,9 @@ export const ptProjects = {
     'O Design System/UI-Kit do grupo Farmácias APP fornece diretrizes, componentes e modelos para aprimorar a experiência do usuário de seus produtos.',
   tapetesETal:
     'Site para uma empresa dedicada à venda de tapetes personalizados de vários tipos.',
+  rapidResume: 'Aplicação para criar curriculo de forma fácil e rápida.',
   seeLink: 'Acessar',
+  development: 'Em desenvolvimento',
 }
 
 export const ptLanguage = {
